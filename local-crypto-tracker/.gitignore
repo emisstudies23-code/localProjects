@@ -51,3 +51,13 @@ db.json
 .next/
 node_modules/
 .env
+
+# Ignore the database inside the subfolder
+local-crypto-tracker/db.json
+
+# Ignore any CSV files anywhere in the project
+*.csv
+
+# Standard Next.js ignores
+local-crypto-tracker/.next/
+local-crypto-tracker/node_modules/
