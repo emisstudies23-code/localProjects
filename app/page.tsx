@@ -11,7 +11,7 @@ const COINGECKO_API_KEY = "CG-vjFyuWRC5YohTBnQyVQTu3P2";
 
 const getCGUrl = (endpoint: string) => {
   const baseUrl = `https://api.coingecko.com/api/v3${endpoint}`;
-  if (COINGECKO_API_KEY && COINGECKO_API_KEY !== "CG-vjFyuWRC5YohTBnQyVQTu3P2") {
+  if (COINGECKO_API_KEY && COINGECKO_API_KEY !== "YOUR_API_KEY_HERE") {
     return `${baseUrl}${baseUrl.includes('?') ? '&' : '?'}x_cg_demo_api_key=${COINGECKO_API_KEY}`;
   }
   return baseUrl;
